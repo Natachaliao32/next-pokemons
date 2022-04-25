@@ -1,1 +1,1 @@
-Projet simple pour débuter avec Next.js. Récupère des données de pokemon de l'api PokeApi et les affiche. Site disponible ici : https://next-pokemons-kappa.vercel.app
+Projet simple pour débuter avec Next.js. Récupère des données de l'api PokeApi et les affiche. La page principale affiche une liste de noms de pokemons. Cliquer sur un nom amène sur une page qui affiche les informations du pokemon en question. Site disponible ici : https://next-pokemons-kappa.vercel.app
