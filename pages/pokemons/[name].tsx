@@ -8,7 +8,11 @@ import { useRouter } from "next/router";
 import { BackButton } from "../../components/BackButton";
 import styles from "../../styles/Pokemon.module.css";
 
-const Pokemon = ({ pokemon }) => {
+type PokemonProps = {
+  pokemon: any
+}
+
+const Pokemon = ({ pokemon }: PokemonProps) => {
 
   console.log("pokemon: ", pokemon);
   const { Text, Title } = Typography;
@@ -47,7 +51,7 @@ const Pokemon = ({ pokemon }) => {
             <div>
               <Divider>Types</Divider>
               <div className={styles.types}>
-                {types.map((type, i) =>
+                {types.map((type: any, i: number) =>
                   <span key={`type-${i}`} className={styles.type}>{type.type.name}</span>
                 )}
               </div>
@@ -56,7 +60,7 @@ const Pokemon = ({ pokemon }) => {
             <div>
               <Divider>Stats</Divider>
               <div className={styles.stats}>
-                {stats.map((stat, i) =>
+                {stats.map((stat: any, i: number) =>
                   <>
                     <Text strong>{stat.stat.name}</Text>
                     <Text >{stat.base_stat}</Text>
